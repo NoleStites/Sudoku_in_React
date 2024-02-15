@@ -4,19 +4,19 @@ The Sudoku.py file will contain the script for generating a Sudoku board (which 
 to the React app when requested.
 
 ## Setup Instructions
-Clone and enter the repository    
-> git clone https://github.com/SOU-Boscoe/lab6-NoleStites.git    
-> cd lab6-NoleStites/lab6
-Install JQuery for communication with Python   
-> npm install jquery    
-Make and activate a Python virtual environment    
-> python3 -m venv env   
-> source env/bin/activate   
-Install the requirements for the Python script   
-> pip install -r requirements.txt    
-Start the React app   
-> cd src   
-> npm start    
-Start the Flask server (in a separate terminal)       
-> python3 ../Sudoku.py      
+1. Clone and enter the repository    
+`git clone https://github.com/SOU-Boscoe/lab6-NoleStites.git`    
+`cd lab6-NoleStites/lab6`   
+2. Install JQuery for communication with Python   
+`npm install jquery`      
+3. Make and activate a Python virtual environment    
+`python3 -m venv env`       
+`source env/bin/activate`      
+4. Install the requirements for the Python script   
+`pip install -r requirements.txt`        
+5. Start the React app   
+`cd src`       
+`npm start`        
+6. Start the Flask server (in a separate terminal)       
+`python3 ../Sudoku.py`           
 
