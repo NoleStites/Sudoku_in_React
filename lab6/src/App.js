@@ -18,9 +18,22 @@ const rand_num_styles = {
     'color': 'green'
 };
 
+const greeting_styles = {
+    'color': 'yellow'
+};
+
 const name = "Nole Stites"
 
 let random_number = Math.floor(Math.random() * 100) + 1; // Generate a random number between 1 and 100
+
+// Determine the time-of-day greeting
+const curr_date = new Date();
+const hour = curr_date.getHours(); // 0-23
+
+let greeting = "";
+if (hour < 12) {greeting = "Good morning!";} // 12:00
+else if (hour < 18) {greeting = "Good afternoon!";} // 6:00
+else {greeting = "Good evening!";} // past 6:00
 
 
 // Create a function for returning the app
@@ -29,6 +42,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <h1><span style={span_styles}>Step 3 Heading:</span> {name}</h1>
+        <h2 style={greeting_styles}>{greeting}</h2>
         <ul>
             <li>List Item 1</li>
             <li>List Item 2</li>
