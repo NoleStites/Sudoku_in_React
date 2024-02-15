@@ -1,5 +1,6 @@
 import logo from './logo.svg';
 import List from './components/List'; // Call the 'List' function with the custom tag <List />
+import Grid from './components/Grid'; // Call the 'Grid' function with the custom tag <Grid />
 import './App.css';
 
 // Define variables for use in the app
@@ -46,6 +47,7 @@ function App() {
         <h2 style={greeting_styles}>{greeting}</h2>
         <List />
         <p>Your random number is: <span style={rand_num_styles}>{random_number}</span></p>
+        <Grid />
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.

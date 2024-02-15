@@ -1,0 +1,29 @@
+:root {
+    --grid_size: 400px
+}
+
+table, #gradient_box {
+    width: var(--grid_size);
+    height: var(--grid_size);
+}
+
+table {
+    position: absolute;
+}
+
+#gradient_box {
+    /*background-image: linear-gradient(135deg, red, green, blue);*/
+    background-image: url("japan.jpg");
+    background-size: cover;
+    z-index: 3;
+}
+
+td {
+    background-color: rgba(0, 0, 0, 255);
+    transition: background-color 0.5s;
+}
+
+td:hover {
+    background-color: rgba(30, 30, 30, 0);
+}
+
