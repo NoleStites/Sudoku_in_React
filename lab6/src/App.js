@@ -2,17 +2,26 @@ import logo from './logo.svg';
 import './App.css';
 
 // Define variables for use in the app
+/*
 const h1_styles = {
     'color': 'orange',
     'text-decoration-line': 'underline'
 };
+*/
+
+const span_styles = {
+    'color': 'orange',
+    'text-decoration-line': 'underline'
+};
+
+const name = "Nole Stites"
 
 // Create a function for returning the app
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1 style={h1_styles}>Step 3 Heading</h1>
+        <h1><span style={span_styles}>Step 3 Heading:</span> {name}</h1>
         <ul>
             <li>List Item 1</li>
             <li>List Item 2</li>
