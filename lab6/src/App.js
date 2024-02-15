@@ -1,4 +1,5 @@
 import logo from './logo.svg';
+import List from './components/List'; // Call the 'List' function with the custom tag <List />
 import './App.css';
 
 // Define variables for use in the app
@@ -43,11 +44,7 @@ function App() {
       <header className="App-header">
         <h1><span style={span_styles}>Step 3 Heading:</span> {name}</h1>
         <h2 style={greeting_styles}>{greeting}</h2>
-        <ul>
-            <li>List Item 1</li>
-            <li>List Item 2</li>
-            <li>List Item 3</li>
-        </ul>
+        <List />
         <p>Your random number is: <span style={rand_num_styles}>{random_number}</span></p>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
