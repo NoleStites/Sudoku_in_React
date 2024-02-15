@@ -2,6 +2,7 @@ import logo from './logo.svg';
 import List from './components/List'; // Call the 'List' function with the custom tag <List />
 import Grid from './components/Grid'; // Call the 'Grid' function with the custom tag <Grid />
 import './App.css';
+import $ from 'jquery';
 
 // Define variables for use in the app
 /*
@@ -64,5 +65,34 @@ function App() {
     </div>
   );
 }
+
+
+// Constantly fetch data given by the Python script running through Flask on port 5000 and endpoint 'data'
+$(document).ready(function() {
+  function fetchData() {
+    $.ajax({
+      url: 'http://localhost:5000/data', // Replace this with your server URL
+      method: 'GET',
+      success: function(response) {
+        // Handle received data
+        console.log('Received data:', response);
+
+        // Call fetchData again to initiate the next long polling request
+        fetchData();
+      },
+      error: function(xhr, status, error) {
+        // Handle error
+        console.error('Error fetching data:', error);
+
+        // Retry after a delay
+        setTimeout(fetchData, 5000); // Retry after 5 seconds
+      }
+    });
+  }
+
+  // Start fetching data
+  fetchData();
+});
+
 
 export default App;
