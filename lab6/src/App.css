@@ -2,45 +2,74 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
 .App-header {
-  background-color: #282c34;
+  background-color: green;
   min-height: 100vh;
+    min-width: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+    padding: 0px;
+    margin: 0px;
 }
 
-.App-link {
-  color: #61dafb;
+h1 {
+    color: white;
+    text-shadow: 0px 0px 5px black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+div#left, div#right {
+    width: 100%;
+    height: 100vh;
+    margin: 0px;
+}
+div#left {
+    background-color: rgb(50, 50, 50);
+    justify-content: center;
+}
+div#right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(30, 30, 30);
+    box-shadow: -4px 0px 7px black;
 }
 
+label { 
+    font-size: 25px;
+}
 
-ul {
-    color: maroon;
-    border-bottom: 2px dashed black;
-    border-top: 2px dashed black;
-    padding: 10px;
+div#flex_buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 90%; 
+    margin: 0px auto;
+    padding: 20px;
+}
+
+#size {
+    background-color: white;
+    border-radius: 15px;
+    width: 90px;
+    height: 40px;
+    font-size: 25px;
+}
+#size:hover {
+    background-color: rgb(80, 100, 80);
+    color: white;
+}
+
+#makeSudoku {
+    width: 40%;
+    height: 70px;
+    border-radius: 20px;
+    font-size: 25px;
+    margin-top: 30px;
+}
+#makeSudoku:hover {
+    background-color: rgb(80, 100, 80);
+    color: white;
 }

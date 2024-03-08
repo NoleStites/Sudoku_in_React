@@ -8,7 +8,7 @@ const root = ReactDOM.createRoot(document.getElementById('root')); // public/ind
 // Put things into the "root" div
 root.render(
   <React.StrictMode>
-    <App /> // This returns html code to be put into the "root" div
+    <App /> { /* This returns html code to be put into the "root" div */ }
   </React.StrictMode>
 );
 

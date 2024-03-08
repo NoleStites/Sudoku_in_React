@@ -1,0 +1,18 @@
+02/14/24 08:00:11 PM
+--------------------
+Board Size: 9x9
+Test Count: 1
+Average:    0.01072 s
+Longest:    0.01072 s
+Shortest:   0.01072 s
+
+
+02/14/24 08:00:22 PM
+--------------------
+Board Size: 9x9
+Test Count: 1
+Average:    0.01217 s
+Longest:    0.01217 s
+Shortest:   0.01217 s
+
+
