@@ -1,5 +1,6 @@
 :root {
-    --grid_size: 400px
+    --grid_size: 600px;
+    --tiles_for_width: 49;
 }
 
 table, #gradient_box {
@@ -12,7 +13,6 @@ table {
 }
 
 #gradient_box {
-    /*background-image: linear-gradient(135deg, red, green, blue);*/
     background-image: url("japan.jpg");
     background-size: cover;
     z-index: 3;
@@ -21,6 +21,8 @@ table {
 td {
     background-color: rgba(0, 0, 0, 255);
     transition: background-color 0.5s;
+    width: calc(100% / var(--tiles_for_width));
+    height: calc(100% / var(--tiles_for_width));
 }
 
 td:hover {
