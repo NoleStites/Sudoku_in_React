@@ -1,7 +1,7 @@
 # Sudoku to React
 
 ## About the Project
-This repository builds upon my original [Sudoku Wave Collapse] (https://github.com/NoleStites/Sudoku-Wave-Collapse-Function) repository
+This repository builds upon my original [Sudoku Wave Collapse](https://github.com/NoleStites/Sudoku-Wave-Collapse-Function) repository
 by piping the Sudoku board to a React app frontend rather than a tkinter GUI. To accomplish this, the Python script has been converted into
 a Flask application that the React script can communicate with to send and retreive information. The React app periodically retreives the
 state of the Sudoku board as it is being generated and displays it on the frontend, allowing for a way to see a form of 'animated generation'.
