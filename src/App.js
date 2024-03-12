@@ -1,9 +1,7 @@
-import logo from './logo.svg';
 import Grid from './components/Grid'; // Call the 'Grid' function with the custom tag <Grid />
 import './App.css';
 import { useState, useEffect } from 'react';
 import $ from 'jquery';
-import { Worker, isMainThread, parentPort, workerData } from 'react';
 
 /*======================
     HELPER FUNCTIONS    
@@ -53,6 +51,7 @@ function App() {
 
     // Define a function that will start the board generation
     const generateBoard = () => {
+        // AJAX is a technology used to read data from and send data to a web server (in our case, Flask)
         $.ajax({
             // Access a second endpoint in the Flask application
             url: 'http://localhost:5000/trigger-python-function',
