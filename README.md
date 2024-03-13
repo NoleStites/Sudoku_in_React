@@ -14,7 +14,7 @@ The following instruction assume that you have Node.js set up properly in your t
 `cd Sudoku_in_React`   
 2. Install some node packages   
 `npm install jquery`      
-`npm instal react-scripts`     
+`npm install react-scripts`     
 3. Make and activate a Python virtual environment    
 `python3 -m venv env`       
 `source env/bin/activate`      
