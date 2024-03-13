@@ -31,7 +31,7 @@ def convertTilesToInts():
 
 
 @app.route('/trigger-python-function')
-def trigger_python_function():
+def generateOneValueInBoard():
     global tile_grid
     global tiles_for_width
 
