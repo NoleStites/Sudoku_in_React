@@ -10,7 +10,7 @@ import sys
 import datetime
 
 app = Flask(__name__)
-CORS(app) # Allows the Recat app on port 3000 to access this script on port 5000
+CORS(app) # Allows the React app on port 3000 to access this script on port 5000
 
 def convertTilesToInts():
     new_grid = []
@@ -35,7 +35,10 @@ def trigger_python_function():
     global tile_grid
     global tiles_for_width
 
+    # Generate a single value in the Sudoku board (to be called many times until the board is filled)
     generateSudoku(tile_grid, tiles_for_width)
+
+    # Return the current board state and whether or not it is filled
     board_and_bool = convertTilesToInts()
     return board_and_bool
        
