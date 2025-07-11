@@ -532,4 +532,4 @@ if __name__ == "__main__":
     backtracking = False # To keep track if we choose the Tile to collapse or not
     history = []
     
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
