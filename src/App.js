@@ -54,7 +54,7 @@ function App() {
         // AJAX is a technology used to read data from and send data to a web server (in our case, Flask)
         $.ajax({
             // Access a second endpoint in the Flask application
-            url: '/api/generateOneValue',
+            url: '/api/generateOneValue/',
             method: 'GET',
 
             // Receive the response from the Flask application
@@ -83,7 +83,7 @@ function App() {
         // 1. Clear the board
         $.ajax({
             // Specify the port of the Flask application and the endpoint to use
-            url: '/api/clear_board?board_size=' + grid_size,
+            url: '/api/clear_board/?board_size=' + grid_size,
             method: 'GET',
 
             // Receive the data returned by the Python function at the endpoint
