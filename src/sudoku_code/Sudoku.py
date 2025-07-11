@@ -30,6 +30,10 @@ def convertTilesToInts():
     myDict = {'grid': new_grid, 'isGenerated': isGenerated}
     return myDict
 
+@app.route('/')
+def index(): # This route is just for debugging
+    return 'Sudoku backend is running!'
+
 
 @app.route('/generateOneValue')
 def generateOneValueInBoard():
