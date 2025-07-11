@@ -35,7 +35,7 @@ def index(): # This route is just for debugging
     return 'Sudoku backend is running!'
 
 
-@app.route('/generateOneValue')
+@app.route('/generateOneValue/')
 def generateOneValueInBoard():
     global tile_grid
     global tiles_for_width
@@ -48,7 +48,7 @@ def generateOneValueInBoard():
     return board_and_bool
        
  
-@app.route('/clear_board')
+@app.route('/clear_board/')
 def initialize_grid():
     global tiles_for_width
     global tile_grid
