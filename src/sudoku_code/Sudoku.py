@@ -8,6 +8,7 @@ import random
 import time
 import sys
 import datetime
+import os
 
 app = Flask(__name__)
 CORS(app) # Allows the React app on port 3000 to access this script on port 5000
@@ -532,4 +533,5 @@ if __name__ == "__main__":
     backtracking = False # To keep track if we choose the Tile to collapse or not
     history = []
     
+    port = int(os.environ.get('PORT', 5000))  # Use PORT env var or default 5000
     app.run(debug=True, host='0.0.0.0', port=port)
